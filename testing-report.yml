@@ -85,21 +85,21 @@ status: pass
 
 - summary: |
     Фильтр по цене, валид справа.
-status:
+status: pass
     
 - summary: |
     Фильтр по цене, буквенный ввод, поле "От" ("From" в английской версии)
-status:
+status: pass
      
 - summary: |
     Фильтр по цене, буквенный ввод, поле "До" ("To" в английской версии)
-status:
+status: pass
 
 - summary: |
     Фильтр по цене, отрицательное число, поле "От" ("From" в английской версии)
-status:
+status: fail
 
 - summary: |
     Фильтр по цене, отрицательное число, поле "До" ("To" в английской версии)
-status:
+status: fail
      
