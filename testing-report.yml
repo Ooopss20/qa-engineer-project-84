@@ -9,7 +9,7 @@ status: pass
 
 - summary: |
     Строка поиска, спецсимволы.
-status:
+status: pass
 
 - summary: |
     Строка поиска, пробел.
