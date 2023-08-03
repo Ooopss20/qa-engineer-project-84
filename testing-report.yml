@@ -25,45 +25,47 @@ status: pass
 
 - summary: |
     Переход на главную страницу после поиска через строку поиска
-status:
+status: fail
 
 - summary: |
     Добавление товара в корзину
-status:
+status: pass
      
 - summary: |
     Единичное удаление товара из корзины
-status:
+status: pass
 
 - summary: |
     Полная очистка корзины корзины
-status:
+status: pass
 
 - summary: |
     Кнопка продожить покупки ("Continue shopping" в английской версии сайта)
-     
+status: pass
+
 - summary: |
-    Быстрое количественное отображение товара в корзине  
+    Быстрое количественное отображение товара в корзине
+status: pass
 
 - summary: |
    Оформление заказа
-status:
+status: pass
 
 - summary: |
    Закрытие диалогового окна после заказа, кнопка Закрыть ("Close" в английской версии сайта)
-status:
+status: passs
 
 - summary: |
    Закрытие диалогового окна после заказа, кнопка "Х"
-status:
+status: fail
 
 - summary: |
     Фильтр поиска товаров по бренду
-status:
+status: pass
 
 - summary: |
     Фильтр поиска товаров по бренду и категории
-status:
+status: pass
 
 - summary: |
     Фильтр поиска товаров по несуществующим позициям
