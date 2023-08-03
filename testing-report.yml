@@ -13,15 +13,15 @@ status: pass
 
 - summary: |
     Строка поиска, пробел.
-status:
+status: fail
 
 - summary: |
     Строка поиска, копирование из буфера.
-status:
+status: pass
 
 - summary: |
     Строка поиска, кириллица.
-status:
+status: pass
 
 - summary: |
     Переход на главную страницу после поиска через строку поиска
