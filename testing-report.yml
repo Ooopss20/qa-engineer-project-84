@@ -53,7 +53,7 @@ status: pass
 
 - summary: |
    Закрытие диалогового окна после заказа, кнопка Закрыть ("Close" в английской версии сайта)
-status: passs
+status: pass
 
 - summary: |
    Закрытие диалогового окна после заказа, кнопка "Х"
@@ -69,19 +69,19 @@ status: pass
 
 - summary: |
     Фильтр поиска товаров по несуществующим позициям
-status:
+status: pass
 
 - summary: |
     Фильтр по цене, валидное значение.
-status:
+status: pass
 
 - summary: |
     Фильтр по цене, граничные значения.
-status:
+status: pass
 
 - summary: |
     Фильтр по цене, невалид слева.
-status:
+status: 
 
 - summary: |
     Фильтр по цене, валид справа.
