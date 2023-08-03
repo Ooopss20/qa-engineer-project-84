@@ -81,7 +81,7 @@ status: fail
 
 - summary: |
     Фильтр по цене, невалид слева.
-status: 
+status: pass
 
 - summary: |
     Фильтр по цене, валид справа.
