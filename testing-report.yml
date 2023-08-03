@@ -5,7 +5,7 @@ status: pass
     
 - summary: |
     Строка поиска, невалидное значение.
-status: 
+status: pass
 
 - summary: |
     Строка поиска, спецсимволы.
