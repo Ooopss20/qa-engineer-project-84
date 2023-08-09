@@ -105,4 +105,8 @@ status: fail
 
 - summary: |
     Смена языка на сайте
+status: pass
+
+- summary: |
+    Выпадающий список смены языка
 status: fail
