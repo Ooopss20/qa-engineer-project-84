@@ -403,14 +403,13 @@
   requirement: |
     Возможность смены языка сайта пользователем
   prerequisites: |
-    - Открыть старницу https://hexlet-products-store.vercel.app/ 
-    - Открыт сайт на англиском языке
+    - Открыть старницу на англиском языке https://hexlet-products-store.vercel.app/ 
   test-data: |
     Тестовые данные
     
   steps:
     - Вправом верхнем углу сайта нажать кноку "Language" ("Язык" в русской версии)
-    - Выбрать русский язык
+    - Выбрать русский язык (Russian)
   expected-result: |
      Версия сайта изменена на русский.
 
