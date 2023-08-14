@@ -106,7 +106,7 @@
     Открыть старницу https://hexlet-products-store.vercel.app/
   test-data: |
     Тестовые данные
-    Samsung Univerce 9
+    Samsung Univerce 9, iPhone X
   steps:
     - Вводим в строку поиска тестовые данные
     - Нажимаем кнопку "В корзину" ("Add to cart" в английской версии сайта)
