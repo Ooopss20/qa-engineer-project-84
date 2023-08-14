@@ -110,3 +110,7 @@ status: pass
 - summary: |
     Выпадающий список смены языка
 status: fail
+
+- summary: |
+    Добавление товара в корзину
+status: fail
