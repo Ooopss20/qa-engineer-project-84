@@ -1,99 +1,107 @@
 ---
 - summary: |
-    Строка поиска, валидное значение (iPhone 9).
+    Проверка поиска по ключевому слову.
   requirement: |
     Пользователю должно отобразиться, то, что он запросил.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
-    iPhone 9
+    NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение: iPhone 9
   expected-result: |
-    Пользователь должен увидеть запрашиваемый продукт:
-    - Карточку товара с его изображением
-    - Описанием
-    - Ценой
-    - Доступным количеством для заказа
-    - Скидкой (если она есть)
-    - Кнопка добавления в корзину
+    Отображаются товары согласно запросу
     
 - summary: |
-    Строка поиска, невалидное значение (iPhone 10).
+    Проверка отобажения плейсхолдера Nothing Found при нулевой выдаче
   requirement: |
     Пользователю должно отобразиться сообщение о неудачном поиске.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
-    iPhone 10
+     NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение: iPhone 10
   expected-result: |
      Пользователю должна отобразиться надпись "Ничего не найдено!". ("Nothing found!" в английской верси сайта)
 
 - summary: |
-    Строка поиска, спецсимволы.
+    Проверка поиска по ключевому слову при вводе спецсимволов.
   requirement: |
     Пользователю должно отобразиться сообщение о неудачном поиске.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
-    "№"%%:"!
+     NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение: @!#$%^&
   expected-result: |
      Пользователю должна отобразиться надпись "Ничего не найдено!". ("Nothing found!" в английской верси сайта)
 
 - summary: |
-    Строка поиска, пробел.
+    Проверка поиска по ключевому слову при пустом вводе.
   requirement: |
     Пользователю должно отобразиться сообщение о неудачном поиске.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
-     (Пробел)
+     NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение: "пробел"
   expected-result: |
      Пользователю должна отобразиться надпись "Ничего не найдено!". ("Nothing found!" в английской верси сайта)
 
 - summary: |
-    Строка поиска, копирование из буфера.
+    Проверка поиска по ключевому слову при вставке названия из буфера.
   requirement: |
     Пользователю должно отобразиться сообщение о неудачном поиске.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+   -
   test-data: |
-    (ссылка на файл)
+    NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение из файла по ссылке: "ссылка"
   expected-result: |
      Пользователю должна отобразиться надпись "Ничего не найдено!". ("Nothing found!" в английской верси сайта)
 
 - summary: |
-    Строка поиска, кириллица.
+    Проверка поиска по ключевому слову при вводе кириллицы.
   requirement: |
     Пользователю должно отобразиться сообщение о неудачном поиске.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
-    Самсунг
+     NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение: Самсунг
   expected-result: |
      Пользователю должна отобразиться надпись "Ничего не найдено!". ("Nothing found!" в английской верси сайта)
 
 - summary: |
-    Переход на главную страницу после поиска товара
+    Проверка перехода на главную страницу после поиска товара
   requirement: |
     Пользователь должен перейти на главную страницу.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
-    iPhone 9
+    NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Нажать на поле поиска
+    - Ввести значение: HP
     - Нажимаем кнопку "Магазин" ("Store" в английской версии сайта)
   expected-result: |
      Пользователь должнен перейти на главную страницу магазина по адресу https://hexlet-products-store.vercel.app/
@@ -103,51 +111,31 @@
   requirement: |
     Товар должен отображаться в корзине при его добавлении пользователем
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+   -
   test-data: |
     Тестовые данные
-    Samsung Univerce 9, iPhone X
+    NO DATA
   steps:
-    - Вводим в строку поиска тестовые данные
-    - Нажимаем кнопку "В корзину" ("Add to cart" в английской версии сайта)
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Выбрать любой товар из каталога
     - Нажимаем кнопку "Корзина" ("Cart" в английской верси сайта)
   expected-result: |
-     Пользователь должнен увидеть ранее добавленный товар в корзине в необходимом количестве.
-     На странице изображено:
-     - Наименование заказанного товара
-     - Доступное количество для заказа
-     - Количество заказанного товара
-     - Сумма без скидки
-     - Кнопка удаления товара
-     - Сумма со скидкой
+     Выбранный товар добавлен и отображается в корзине
      
 - summary: |
-    Частичное удаление товара из корзины
-  requirement: |
-    Пользователь должен иметь возможность удалять товар из корзины поштучно
-  prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
-    Добавить любой товар в корзину в количестве 1 шт.
-  test-data: |
-    -
-  steps:
-    - Нажимаем кнопку "Корзина" ("Cart" в английской версии сайта)
-    - Нажимаем кнопку "Удалить" ("Delete" в английской версии сайта)
-  expected-result: |
-    Товар был удален, корзина пуста.
-
-- summary: |
-    Полная очистка корзины
+   Удаление товара из корзины
   requirement: |
     Пользователь должен иметь возможность удалять товар из корзины
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
-    Добавить любые товары в корзину в любом количестве
-  test-data: |
     -
+    Добавить любой товар в корзину в количестве 1 шт.
+  test-data: |
+    NO DATA
   steps:
-    - Нажимаем кнопку "Корзина" ("Cart" в английской версии сайта)
-    - Нажимаем кнопку "Очистить корзину" ("Clear cart" в английской версии сайта)
+    - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Выбрать любой товар из каталога
+    - Нажать кнопку "Корзина" ("Cart" в английской версии сайта)
+    - Нажать кнопку "Очистить корзину" ("Clear cart" в английской версии сайта)
   expected-result: |
     Товар был удален, корзина пуста.
 
@@ -156,7 +144,7 @@
   requirement: |
     Пользователь должен иметь возможность продолжить покупки после оформления заказа 
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
     Добавить товар в корзину в любом количестве
   test-data: |
     -
@@ -173,7 +161,7 @@
   requirement: |
    Пользователь должен видеть количество ранее добавленного товара не заходя в корзину
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     Samsung Univerce 9
@@ -188,7 +176,7 @@
   requirement: |
     Возможность оформления заказа после добавления его в корзину
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     Samsung Univerce 9
@@ -211,7 +199,7 @@
   requirement: |
     Пользователь должен иметь возможность закрыть диалоговое окно
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     Iphone X
@@ -229,7 +217,7 @@
   requirement: |
     Пользователь должен иметь возможность закрыть диалоговое окно разными способами
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Mornadi Velvet Bed
     Iphone X
@@ -247,7 +235,7 @@
   requirement: |
     Товар должен отображаться согласно выбранному фильтру
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     -
@@ -265,7 +253,7 @@
   requirement: |
     Товар должен отображаться согласно выбранным фильтрам
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     -
@@ -285,7 +273,7 @@
   requirement: |
     Товар не должен отображаться при не валидном сочетании категории и бренда
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     -
@@ -300,7 +288,7 @@
   requirement: |
     Товар должен отображаться согласно выбранному диапозону
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     от (From) 500$ до (To) 1800$
@@ -314,7 +302,7 @@
   requirement: |
     Товар должен отображаться согласно выбранному диапозону
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     от (From) 1$ до (To) 10$
@@ -328,7 +316,7 @@
   requirement: |
     Товар должен отображаться согласно выбранному диапозону
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     от (From) 10$ до (To) 1749$
@@ -342,7 +330,7 @@
   requirement: |
     Товар должен отображаться согласно выбранному диапозону
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     от (From) 1750$ до (To) 10000$
@@ -356,7 +344,7 @@
   requirement: |
     Товар должен отображаться согласно выбранному диапозону
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     от (From) 1$ до (To) 9$
@@ -371,7 +359,7 @@
   requirement: |
     Ввод любых символов кроме цифр запрещен.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     Hello!
@@ -385,7 +373,7 @@
   requirement: |
     Ввод любых символов кроме цифр запрещен.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     Hello!
@@ -399,7 +387,7 @@
   requirement: |
     Ввод отрицательных значений запрещен.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     -1
@@ -413,7 +401,7 @@
   requirement: |
     Ввод отрицательных значений запрещен.
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     Тестовые данные
     -999999999
@@ -442,7 +430,7 @@
   requirement: |
     Наличие выпадающего списка возможных языков
   prerequisites: |
-    - Открыть старницу https://hexlet-products-store.vercel.app/ 
+    - 
   test-data: |
     Тестовые данные
     
@@ -490,7 +478,7 @@
   requirement: |
     Пользователь должен иметь возможность оставаться на той версии сайта, которую выбрал изначально
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
+    -
   test-data: |
     -
   steps:
