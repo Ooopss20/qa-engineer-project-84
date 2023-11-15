@@ -29,7 +29,7 @@ status: fail
 
 - summary: |
     Добавление товара в корзину
-status: fail
+status: pass
      
 - summary: |
     Удаление товара из корзины
