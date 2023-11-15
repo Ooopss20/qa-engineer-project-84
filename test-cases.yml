@@ -118,6 +118,7 @@
   steps:
     - Открыть старницу https://hexlet-products-store.vercel.app/
     - Выбрать любой товар из каталога
+    - Нажимаем кнопку "Add to cart"
     - Нажимаем кнопку "Cart"
   expected-result: |
      Выбранный товар добавлен и отображается в корзине
