@@ -68,7 +68,7 @@ status: pass
 status: pass
 
 - summary: |
-   Проверка фильтра по цене
+   Проверка фильтра по цене в двух диапазонах.------
 status: fail
 
 - summary: |
