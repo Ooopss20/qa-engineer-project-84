@@ -354,7 +354,7 @@
   requirement: |
     Возможность смены языка сайта пользователем
   prerequisites: |
-    - Открыть старницу на англиском языке https://hexlet-products-store.vercel.app/ 
+    - 
   test-data: |
      NO DATA
   steps:
@@ -385,12 +385,12 @@
   requirement: |
     Пользователь должен иметь возможность удалять товар из корзины с последующем переходом на главную страницу
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
-    Добавить любые товары в корзину в любом количестве
+    -
   test-data: |
     NO DATA
   steps:
     - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Добавить любые товары в корзину в любом количестве
     - Нажимаем кнопку "Cart"
     - Нажимаем кнопку "Clear cart"
     - Нажимаем кнопку "Store"
@@ -402,12 +402,12 @@
   requirement: |
     Пользователь должен иметь возможность удалять товар из корзины с последующем обновлением страницы
   prerequisites: |
-    Открыть старницу https://hexlet-products-store.vercel.app/
-    Добавить любые товары в корзину в любом количестве
+    -
   test-data: |
     NO DATA
   steps:
     - Открыть старницу https://hexlet-products-store.vercel.app/
+    - Добавить любые товары в корзину в любом количестве
     - Нажимаем кнопку "Cart"
     - Нажимаем кнопку "Clear cart"
     - Нажимаем кнопку обновить страницу (F5)
